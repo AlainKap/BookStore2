@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+.button-clik{
+  border-radius: 12px;
+  padding: 5px;
+  margin-right: 8px;
+  /*box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);*/
+  background-color: rgba(128, 128, 128, 0.714);
+}

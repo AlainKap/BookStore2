@@ -1,0 +1,27 @@
+<div class="wrapper grid grid-cols-4 gap-4">
+  @for (book of books; track $index) {
+  <div class="card" (click)="book.id !== undefined && selectBook(book.id)">
+    <div class="content">
+      <h2>{{ book.title }}</h2>
+      <p>de {{ book.authorPrenom }} {{ book.authorNom }}</p>
+      <p>{{ book.pages }} pages</p>
+      <p>Première édition: {{ book.annee }}</p>
+      <button (click)="showAddForm = true" class="button-clik">Editer</button>
+      <button (click)="removeItem(index)" class="button-clik">Supprimer</button>
+    </div>
+    <div class="image">
+      <img
+        [src]="'assets/imagBooks/' + book.id + '.jpg'"
+        [alt]="book.title"
+        class="pic"
+      />
+    </div>
+  </div>
+  }
+</div>
+
+  @if(selectedBook) {
+    <app-edit-book [book]="selectedBook" (editEmitter)="edit($event)" />
+      <button (click)="showAddForm = false">Fermer l'Edition</button>
+  }
+

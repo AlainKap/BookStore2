@@ -1,0 +1,31 @@
+<form class="grid" (ngSubmit)="add()" >
+  <p class="form-title">Ajouter</p> <br>
+  <label for="id">id</label>
+  <input name="id" type="number" [(ngModel)]="book.id"/>
+
+  <label for="title">Titre</label>
+  <input name="title" type="text" [(ngModel)]="book.title"/>
+
+  <label for="authorNom">Nom de l'auteur</label>
+  <input name="authorNom" type="text" [(ngModel)]="book.authorNom" />
+
+  <label for="authorPrenom">Prénom de l'auteur</label>
+  <input name="authorPrenom" type="text" [(ngModel)]="book.authorPrenom" />
+
+  <label for="imageUrl">imageUrl</label>
+  <input name="imageUrl" type="text" [(ngModel)]="book.imageUrl" />
+
+  <label for="page">Pages</label>
+  <input name="page" type="number" [(ngModel)]="book.pages" />
+
+  <label for="like">Likes</label>
+  <input name="like" type="number" [(ngModel)]="book.likes" />
+
+
+  <label for="annee">Année</label>
+  <input type="text" name="annee" [(ngModel)]="book.annee"/>
+
+  <button type="submit">Créer</button>
+</form>
+
+

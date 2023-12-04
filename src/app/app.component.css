@@ -1,0 +1,15 @@
+.pearle{
+  text-align: center;
+  background-color: rgba(0, 255, 238, 0.83);
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.eden {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*height: 100vh; /* Pour centrer verticalement sur toute la hauteur de la fenêtre */
+}

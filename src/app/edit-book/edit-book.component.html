@@ -1,0 +1,31 @@
+<form class="grid" (ngSubmit)="edit()" >
+  <p class="form-title">Editer</p> <br>
+  <label for="id">id</label>
+  <input name="id" type="number" [(ngModel)]="bookEdition.id"/>
+
+  <label for="title">Titre</label>
+  <input name="title" type="text" [(ngModel)]="bookEdition.title"/>
+
+  <label for="authorNom">Nom de l'auteur</label>
+  <input name="authorNom" type="text" [(ngModel)]="bookEdition.authorNom" />
+
+  <label for="authorPrenom">Prénom de l'auteur</label>
+  <input name="authorPrenom" type="text" [(ngModel)]="bookEdition.authorPrenom" />
+
+  <label for="imageUrl">imageUrl</label>
+  <input name="imageUrl" type="text" [(ngModel)]="bookEdition.imageUrl" />
+
+  <label for="page">Pages</label>
+  <input name="page" type="number" [(ngModel)]="bookEdition.pages" />
+
+  <label for="like">Likes</label>
+  <input name="like" type="number" [(ngModel)]="bookEdition.likes" />
+
+
+  <label for="annee">Année</label>
+  <input type="text" name="annee" [(ngModel)]="bookEdition.annee"/>
+
+  <button type="submit">Modifier</button>
+</form>
+
+
